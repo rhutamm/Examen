@@ -4,91 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica CSS</title>
+    <title>Examen</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lora&family=Noto+Serif&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
-    <header id="header">
-        <nav>
-            <ul>
-                <li class="fas fa-home"><a href="index.html">  Home</a></li>
-                <li class="fas fa-id-card"><a href="contactos"> Contactos</a></li>
+    <header id="top">
+        <div class="banner">
+            <img id="img" src="imagenes/guardabarranco.jpg" alt="">
+            <h3>Los Animales mas Asombrosos</h3>
+            <button type="button" class="btn btn-outline-info">Ver Más...</button>
+        </div>
+        <nav class="navBar">
+            <ul class="navbar nav col-md-14 flex-row justify-content-center">
+                <li class="nav item"><a href="#terrestre" class="nav-link">Terrestres</a></li>
+                <li class="nav item"><a href="#acuatica" class="nav-link">Acuaticos</a></li>
+                <li class="nav item"><a href="#aerea" class="nav-link">Aéreos</a></li>
+                <li class="nav item"><a href="#otros" class="nav-link">Otros</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="tapContenedor">
-            <ul>
-                 <li class="botones"><a href="#divProd">Productos</a></li>
-                <li class="botones"><a href="#divServicios">Servicios</a></li>
-                <li class="botones"><a href="#divAsesorias">Asesorias</a></li>
-            </ul>
-            <section id="tapContenido">
-            <div id="divProd" class="fab fa-product-hunt">
-                <h2>Nuestros Productos</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet eius repellat, blanditiis vero dicta, repellendus ratione rem nemo autem odio aperiam ullam ab? Magni cum eius quia aspernatur labore.
-                </p>
-            </div>
-            <div id="divServicios" class="fas fa-handshake">
-                <h2>Nuestros Servicios</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet eius repellat, blanditiis vero dicta, repellendus ratione rem nemo autem odio aperiam ullam ab? Magni cum eius quia aspernatur labore.
-                </p>
-            </div>
-            <div id="divAsesorias" class="fas fa-phone-volume">
-                <h2>Nuestras Asesorias</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet eius repellat, blanditiis vero dicta, repellendus ratione rem nemo autem odio aperiam ullam ab? Magni cum eius quia aspernatur labore.
-                </p>
-            </div>
-        </section>
-        </section> 
-        <div id="detalleInfo">
-            <table>
-                <tr>
-                    <th>Codigo</th>
-                    <th>Nombre</th>
-                    <th>Observaciones</th>
-                </tr>
-                <tr>
-                    <td>Prod01</td>
-                    <td>Producto 01</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-                <tr>
-                    <td>Prod02</td>
-                    <td>Producto 02</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-                <tr>
-                    <td>Serv01</td>
-                    <td>Servicio 01</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-                <tr>
-                    <td>Serv02</td>
-                    <td>Servicio 02</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-                <tr>
-                    <td>Asesorias</td>
-                    <td>Asesorias Creativas</td>
-                    <td>Algunos Comentarios</td>
-                </tr>
-            </table>
+    <article class="d-flex flex-row" id="box">
+        <div id="box1" class="jumbotrom shadow mx-2 container-fluid text-center col-md-4">
+            <i class="fas fa-cat fa-3x"></i>
+            <h3>Fauna Terrestre</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi at, ab saepe magnam delectus totam accusantium a. Mollitia cum asperiores facilis ducimus officia id sit laboriosam velit deserunt odit!</span>
         </div>
-        <footer>
-            <ul>
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </footer>
+        <div class="jumbotrom shadow mx-2 container-fluid text-center col-md-4">
+            <i class="fas fa-fish fa-3x"></i>
+            <h3>Fauna Acuatica</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi at, ab saepe magnam delectus totam accusantium a. Mollitia cum asperiores facilis ducimus officia id sit laboriosam velit deserunt odit!</span>
+        </div>
+        <div class="jumbotrom shadow mx-2 container-fluid text-center col-md-4">
+            <i class="fas fa-crow fa-3x"></i>
+            <h3>Fauna Aerea</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi at, ab saepe magnam delectus totam accusantium a. Mollitia cum asperiores facilis ducimus officia id sit laboriosam velit deserunt odit!</span>
+        </div>
+        <div class="jumbotrom shadow mx-2 container-fluid text-center col-md-4">
+            <i class="fas fa-spider fa-3x"></i>
+            <h3>Otros</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium excepturi at, ab saepe magnam delectus totam accusantium a. Mollitia cum asperiores facilis ducimus officia id sit laboriosam velit deserunt odit!</span>
+        </div>
+    </article>
+    <main>
+        <div class="animales">
+            <div id="terrestre">
+                <h2>Fauna Terrestre</h2><br>
+                <ul>
+                    <li><img class="img" src="imagenes/armadillo.jpg" alt=""><br>Armadillo</li>
+                    <li><img src="imagenes/tigre.jpg" alt=""><br>Tigre</li>
+                    <li><img src="imagenes/tapir.jpg" alt=""><br>Tapir</li>
+                </ul>
+            </div>
+            <div id="acuatica">
+                <h2>Fauna Acuatica</h2><br>
+                <ul>
+                    <li><img src="imagenes/peces.jpg" alt=""><br>Peces</li>
+                    <li><img src="imagenes/tiburones.jpg" alt=""><br>Tiburones</li>
+                    <li><img src="imagenes/tortuga.jpg" alt=""><br>Tortuga</li>
+                </ul>
+            </div>
+            <div id="aerea">
+                <h2>Fauna Aérea</h2><br>
+                <ul>
+                    <li><img src="imagenes/chocoyo.jpg" alt=""><br>Chocoyo</li>
+                    <li><img src="imagenes/tucan.jpg" alt=""><br>Tucán</li>
+                    <li><img src="imagenes/pajaros.jpg" alt=""><br>Pajaros</li>
+                </ul>
+            </div>
+            <div id="otros">
+                <h2>Otros</h2>
+                <ul>
+                    <li><img src="imagenes/peresoso.jpg" alt=""><br>Peresoso</li>
+                    <li><img src="imagenes/garrobo.jpg" alt=""><br>Garrobo</li>
+                    <li><img src="imagenes/serpiente.jpg" alt=""><br>Serpiente</li>
+                </ul>
+            </div>
+        </div >
     </main>
+    <footer>
+        <div class="foot">
+        <h3>Contactanos:</h3>
+            <ul class="uno">
+                <li><a href="#"><i class="fas fa-directions">Direccion Local Fsico</i></a></li>
+                <li><a href="#"><i class="fas fa-phone">+505 75982 4125 / +505 5853 5684</i></a></li>
+                <li><a href="#"><i class="fas fa-mail-bulk"></i>micorreo@hotmail.com</i></a></li>
+                <li><a href="#"><i class="fas fa-globe-americas">www.faunanicaragua.com.ni</i></a></li>
+            </ul>
+            <ul class="dos">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

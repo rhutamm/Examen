@@ -1,0 +1,139 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: url('../imagenes/fondo.jpg') no-repeat fixed;
+    background-size: cover;
+    
+}
+.banner{
+    margin-top: 1%;
+    text-align: center;
+    background-color: white;
+    font-size: 10%;
+    margin: 1%;
+}
+.navBar{
+    background: rgb(189, 224, 189);
+    margin: 3px;
+    top: 50%;
+    font-size: 19px;
+    color: black;
+}
+#box{
+    height: 40%;
+    width: 70%;
+    font-size: 13px;
+    top: 57%;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    margin-left: 1%;
+    
+}
+#box div{
+    background-color: white;
+}
+.animales div{
+    background-color: white;
+    background-size: cover;
+    
+}
+#terrestre{
+    position: absolute;
+    top: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25%; 
+    margin-right: 25%;
+    align-content: center;
+    
+}
+#terrestre li{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+#acuatica{
+    position: absolute;
+    top: 150%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 24%; 
+    margin-right: 24%;
+    align-content: center;
+    
+}
+#acuatica li{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+#aerea{
+    position: absolute;
+    top: 200%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 26%; 
+    margin-right: 26%;
+    align-content: center;
+    
+}
+#aerea li{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+#otros{
+    position: absolute;
+    top: 250%;
+    justify-content: center;
+    text-align: center;
+    margin-left: 24%; 
+    margin-right: 24%;
+    align-content: center;
+    
+}
+#otros li{
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+}
+.foot{
+    
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 20px;
+    position: absolute;
+    top: 300%;
+    width: 100%;
+    height: 30%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.uno{
+    position: absolute;
+    margin-left: 23%;
+    list-style-type: none;
+}
+.dos{
+    position: absolute;
+    margin-left: 63%;
+    list-style-type: none;
+}
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.animales img:hover {
+    animation: zoominoutsinglefeatured 2s forwards ;
+}
